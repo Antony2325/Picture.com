@@ -480,7 +480,14 @@
         .back-to-top:hover {
             background: var(--primary);
         }
-        
+.flash-animation {
+  animation: flashBlink 1s infinite;
+}
+
+@keyframes flashBlink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(1.2); }
+}  
         @media (max-width: 768px) {
             .logo {
                 font-size: 2.5rem;
